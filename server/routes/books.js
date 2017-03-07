@@ -99,6 +99,7 @@ router.put('/save/:id', function(req, res){
   var bookObject = req.body;
   // UPDATE books SET title='The Yodler' WHERE id=40;
   console.log('book of id to save: ', bookId);
+  console.log('bookObject', bookObject);
   // Connecting to, and deleting row from the database
   pool.connect(function(errorConnectingToDatabase, client, done){
     if(errorConnectingToDatabase) {
