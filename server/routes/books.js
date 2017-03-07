@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var pg = require('pg');
 var config = {
-  database: 'PHI', // the name of the database
+  database: 'phi', // the name of the database
   host: 'localhost', // where is your database
   port: 5432, // the port number for your database
   max: 10, // how many connections at one time
